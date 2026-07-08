@@ -1,0 +1,190 @@
+:root{
+
+    --primary:#0F172A;
+
+    --secondary:#F97316;
+
+    --background:#FFFFFF;
+
+    --text:#374151;
+
+    --light:#F8FAFC;
+
+}
+
+
+
+/* ===========================
+   Google Font
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#1f2937;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===========================
+   Reusable Container
+=========================== */
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+
+    width:100%;
+
+    background:#ffffff;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
+    z-index:1000;
+
+}
+
+.navbar .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:80px;
+
+}
+
+/* ==========================
+        Logo
+========================== */
+
+.logo{
+
+    font-size: 2rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo-code{
+
+    color:#0F172A;
+
+}
+
+.logo-maharashtra{
+
+    color:#F97316;
+
+}
+
+.logo-maharashtra{
+
+    margin-left:4px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:#374151;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+.join-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.join-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.join-btn{
+
+display:none;
+
+}
+
+}
